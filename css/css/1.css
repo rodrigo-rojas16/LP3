@@ -1,0 +1,36 @@
+/*Ejercicio 1 llamar a estilos css desde un archivo*/
+
+
+/*Agregar fuentes externas para el h1*/
+
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+/*Agregar fuentes internas dentro de proyecto*/
+@font-face{
+    font-family: embassy;
+    src: url(embassy-bt.ttf);
+}
+
+/*Estilos generales de las etiquetas (No recomandado)*/
+h1{
+    text-align: center; /*sirver para centrar el texto*/
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-family: 'Tangerine', serif;
+    text-decoration: underline;
+    color: blueviolet;
+    background: aqua;
+}
+a{
+    color: white;
+    background: black;
+}
+p{
+    /*font-family: cursive;*/
+    font-family: embassy; /*Para utilizar un fuente interna*/
+    color: blue;
+    background-color: orange;
+}
+body{
+    background-color: bisque;
+}
+
