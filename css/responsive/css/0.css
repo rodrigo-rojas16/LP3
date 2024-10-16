@@ -1,0 +1,54 @@
+/*responsive desing
+Banner con unidades de viewport vh
+Footer siempre poner abajo y fuera del contenedor
+responsive con Flexbox
+responsive con Grid
+*/
+
+body{
+    margin: 0;
+    color: greenyellow;
+    font-family: cursive;
+    background-image: radial-gradient(circle, blue, black);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo responsive con Flexbox
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox__item{
+    margin: 2rem;
+    width: 320px;
+    flex: 1 1 320px;
+}*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+
+.banner{
+    background: aqua;
+    padding: 10vmin;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.footer{
+    background-color: aqua;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: auto;
+}

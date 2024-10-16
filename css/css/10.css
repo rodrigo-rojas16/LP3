@@ -1,0 +1,42 @@
+/*Positions
+Relative
+absolute
+fixed
+stiky
+z-index
+*/
+/*Position stiky*/
+
+.body{
+    padding-top: 4em;
+
+}
+
+.menu{
+    background-color: aqua;
+    padding: .5em;
+    text-align: center;
+    font-size: 4em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.slide{
+    width: 100%;
+    background-color: blueviolet;
+    font-size: 3em;
+    text-align: center;
+    line-height: 6em;
+
+}
+
+,menu{
+    background-color: aqua;
+    padding: .5em;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+}

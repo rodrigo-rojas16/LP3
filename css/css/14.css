@@ -1,0 +1,48 @@
+/*Pseudocalses
+link
+visited
+active
+hover
+focus
+*/
+
+.link:link{
+    color: red;
+}
+
+.link:visited{
+    color: greenyellow;
+}
+
+.link:active{
+    background-color: tomato;
+    color: violet;
+}
+
+.button{
+    text-decoration: none;
+    display: inline-block;
+    background-color: aqua;
+    padding: .5em;
+    border-radius: 5px;
+
+}
+
+.button:active{
+    transform: scale(.9);
+
+}
+
+.button:hover{
+    color: darkgoldenrod;
+    background-color: aliceblue;
+    border: 1px solid darkgoldenrod;
+}
+
+.input:focus{
+    background-color: gainsboro;
+}
+
+.parrafo{
+    margin-top: 1000px;
+}

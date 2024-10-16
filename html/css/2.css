@@ -1,0 +1,97 @@
+/*Selectores*/
+/*selectores universales*/
+/*
+Etiquetas tienen un peso de 1
+Clases y pseudoclases tienen un peso de 10
+ID tienen un peso de 100
+Estilos en linea tienen un peso de 1000
+!important este estilo le gana a los anteriores
+*/
+/*{
+    color: cyan; 
+}*/ /*afecta a todo el contenido de la pagina*/
+
+h1{
+    color: blue;
+}
+
+p{
+    color: indigo;
+}
+
+/*Selectores por clase*/
+.Titulo{
+color: yellowgreen;
+}
+
+.Parrafo {
+    color: black;
+}
+
+/*selectores por ID*/
+#Titulo{
+    color: blueviolet;
+}
+#Parrafo{
+    color: red;
+}
+
+/*Selectores de Atributos*/
+[href]{
+    color: purple;
+}
+
+/*Selectores de href="#"*/
+[href="#"]{
+    color: orange;
+}
+
+/*Selectores de por clase alt+126 genera este simbolo ~*/
+[class ~="rojo"]{
+    color: chartreuse;
+}
+
+/*Selectores de Atributo de solo una clase*/
+[class |="verde"]{
+    color: black;
+}
+
+/*Selectores de Atributo los que empiecen con una clase alt+94 genera este simbolo ^*/
+[class ^="rojo"]{
+    color: palegreen;
+}
+
+/*Selectores de Atributo los que terminen con una clase $*/
+[class $="rojo verde"]{
+    color: blue;
+}
+
+/*Selectores de Atributo los que contengan una clase * */
+[class *="rojo verde"]{
+    color: chocolate;
+}
+
+/*Selectores combinados*/
+/*Toma al hermano adyascente del hermano que esta por debajo*/
+h1 + h2{
+    color: crimson;
+}
+/*Asi no tiene nigun efecto*/
+h2 + h2{
+    color: blue;
+}
+
+/*Selector hermano general*/
+
+h1 ~ h3{
+    color: greenyellow;
+}
+
+/*Selector Hijo*/
+p span{
+    color: coral; 
+}
+
+/*p span{
+    color: red !important; 
+}*/

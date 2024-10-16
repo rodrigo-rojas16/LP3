@@ -1,0 +1,26 @@
+/*flexbox*/
+
+.flex-container{
+    background-color: blueviolet;
+    padding: .5em;
+    display: flex; /*convertir al elemento en bloque*/
+    /*display: inline-flex;contenedor de tipo linea*/
+    flex-direction: row; /*esta es la propiedad por defecto*/
+    /*flex-direction: row-reverse; invertir la orden normal*/
+    /*flex-direction: column;esta es la opcion por defecto del eje vertical*/
+    /*flex-direction: column-reverse; esta opcion invierte la posicion del eje vertical*/
+    /*Propiedad wrap*/
+    /*flex-wrap: nowrap; esta es la opcion por defecto*/
+    /*flex-wrap: wrap;esta opcion para dar saltos de linea en casos de ser necesario o para que sea responsiva la pagina*/
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    width: 30px;
+    height: 30px;
+    margin: .5em;
+    background-color: aqua;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}

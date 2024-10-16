@@ -1,0 +1,35 @@
+/*Positions
+Relative
+absolute
+fixed
+stiky
+z-index
+*/
+/* Position z-index*/
+
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+
+.box1{
+    background-color: cornflowerblue;
+    z-index: 1;
+}
+
+.box2{
+    background-color: greenyellow;
+    top: -50px;
+    left: 50px;
+    z-index: 2  ;
+}
+
+.box3{
+    background-color: blue;
+    top: -100px;
+    left: 100px;
+    z-index: 3;
+}
