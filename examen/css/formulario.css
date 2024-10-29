@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    margin: 0;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ffffff;
+}
+
+th {
+    background-color: #0f3460;
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a2e;
+}
+
+.boton_container {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    margin-top: 1em; /* Espaciado entre los campos del formulario y los botones */
+}
+
+.formulario_enviar {
+    width: 150px; /* Ancho fijo para los botones */
+    background: #e94560;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario_enviar:hover {
+    background: #d53c4f; /* Color al pasar el mouse */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Ancho responsivo */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #e94560; /* Resaltado al enfocar */
+}
+
+footer {
+    margin-top: auto; /* Asegura que el footer esté al final */
+    text-align: center;
+    padding: 10px;
+    background: #0f3460;
+}
+
+.instagram-logo {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .boton_container {
+        flex-direction: column; /* Coloca los botones en columna en pantallas pequeñas */
+    }
+
+    .formulario_enviar {
+        width: 100%; /* Botones a 100% de ancho en pantallas pequeñas */
+        margin-bottom: 10px; /* Espacio entre botones */
+    }
+}

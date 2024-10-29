@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    margin: 0;
+    color: #ffffff;
+    padding: 20px;
+    background: url('../img/Fondo0.jpg') no-repeat center center fixed;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    background-color: #16213e;
+}
+
+nav {
+    background-color: #0f3460; /* Fondo semi-transparente */
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px; /* Espaciado inferior */ 
+    display: flex;
+    justify-content: center;   
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav a:hover {
+    background-color: rgba(87, 87, 87, 0.7); /* Fondo semi-transparente al pasar el mouse */
+}
+
+.footer {
+    margin-top: auto; /* Asegura que el footer esté al final */
+    text-align: center;
+    padding: 10px;
+    background: #0f3460;
+}
+
+.instagram-logo {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}

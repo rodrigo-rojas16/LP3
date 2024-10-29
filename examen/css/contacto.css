@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    margin: 0;
+    color: #ffffff;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tarjeta_principal {
+    background-color: #0f3460;
+    width: 80%;
+    height: auto; /* Cambiado a auto para adaptarse al contenido */
+    display: flex;
+    margin: 2em auto; /* Centrado en la página */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el efecto de profundidad */
+}
+
+.tarjeta_izquierda {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    padding: 1em; /* Espaciado interno */
+}
+
+.tarjeta_derecha {
+    width: 80%;
+    padding: 2em; /* Espaciado interno */
+}
+
+.tarjeta_titulo {
+    text-align: center; /* Centrar el título */
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Ancho responsivo */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #1a1a2e; /* Fondo del input */
+    color: white; /* Color del texto */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #e94560; /* Resaltado al enfocar */
+}
+
+.boton_container {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    margin-top: 1em; /* Espaciado entre los campos del formulario y los botones */
+}
+
+.formulario_enviar {
+    width: 150px; /* Ancho fijo para los botones */
+    background: #e94560;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario_enviar:hover {
+    background: #d53c4f; /* Color al pasar el mouse */
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+}
+
+@media (max-width: 600px) {
+    .boton_container {
+        flex-direction: column; /* Coloca los botones en columna en pantallas pequeñas */
+    }
+
+    .formulario_enviar {
+        width: 100%; /* Botones a 100% de ancho en pantallas pequeñas */
+        margin-bottom: 10px; /* Espacio entre botones */
+    }
+}
